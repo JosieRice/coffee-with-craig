@@ -21,9 +21,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to Coffee with Craig on React</h1>
+          <p className="App-intro">{this.state.response}</p>
         </header>
-        <p className="App-intro">{this.state.response}</p>
       </div>
     );
   }
