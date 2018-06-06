@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
-const app = express();
 const createError = require('http-errors');
 // const cookieParser = require('cookie-parser');
 // const logger = require('morgan');
-const port = process.env.PORT || 5000;
+const app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
 
 // Serves static files from public folder (react is built to here)
 app.use(express.static(path.join(__dirname, 'public')));
@@ -49,6 +52,7 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 // module.exports = app;
