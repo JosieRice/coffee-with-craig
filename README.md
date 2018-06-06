@@ -19,7 +19,9 @@ to run dev server & open in browser
 
 
 to deploy on AWS Elastic beanstalk
+Add and commit changes to branch
 ```yarn deploy```
+```eb open```
 
 
 
