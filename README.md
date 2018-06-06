@@ -19,6 +19,7 @@ to run dev server & open in browser
 
 
 to deploy on AWS Elastic beanstalk
+```cd client && npm run build```   
 ```eb init```   
 ```eb deploy```   
 
