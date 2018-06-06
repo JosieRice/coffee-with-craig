@@ -5,11 +5,13 @@
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "rmbuild": "cd client && rmdir build",
+    "rmpublic": "rm -r public/*",
     "build": "cd client && npm run build",
     "move": "mv client/build/* public",
     "upload": "eb deploy",
-    "remove": "rmdir client/build",
-    "deploy": "yarn build && yarn move && yarn remove && yarn upload"
+    "deploy": "yarn rmbuild && yarn rmpublic && yarn build && yarn move && yarn upload"
+    
   },
   "dependencies": {
     "express": "^4.16.2"
