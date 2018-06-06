@@ -8,7 +8,8 @@
     "build": "cd client && npm run build",
     "move": "mv client/build/* public",
     "upload": "eb deploy",
-    "deploy": "yarn build && yarn move && yarn upload"
+    "remove": "rmdir client/build",
+    "deploy": "yarn build && yarn move && yarn remove && yarn upload"
   },
   "dependencies": {
     "express": "^4.16.2"
