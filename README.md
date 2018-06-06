@@ -1,4 +1,4 @@
-# coffee-with-craig
+# Coffee with Craig
 My online portfolio... and a way to connect with me over coffee.
 
 Deployment: AWS Elastic Beanstalk
@@ -10,14 +10,14 @@ Frontend: React
 ```npm install```   
 ```yarn```  
 
-run dev server & open in browser   
+- run dev server & open in browser   
 ```yarn dev```   
 
 ## update deployployment on AWS Elastic beanstalk
-(this is just a reminder for me)
-Add and commit changes to branch
-```yarn deploy```
-```eb open```
+(this is just a reminder for me)   
+Add and commit changes to branch   
+```yarn deploy```   
+```eb open```   
 
-##deployed site
+## deployed site
 http://coffee-with-craig-dev.us-west-2.elasticbeanstalk.com/
