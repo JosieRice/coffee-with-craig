@@ -19,10 +19,11 @@ to run dev server & open in browser
 
 
 to deploy on AWS Elastic beanstalk
-```cd client && npm run build```   
-```eb init```   
-```eb deploy```   
+```yarn deploy```
 
-deployed site (express working, but react isn't yet)
 
-http://coffee-with-craig-dev.us-west-2.elasticbeanstalk.com/api/hello
+
+
+deployed site
+
+http://coffee-with-craig-dev.us-west-2.elasticbeanstalk.com/
