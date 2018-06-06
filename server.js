@@ -10,8 +10,10 @@ const port = process.env.PORT || 5000;
 // // different version of code below
 // app.use(express.static(`${__dirname}/client/build`));
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build/')));
+// // Serve static files from the React app
+// app.use(express.static(path.join(__dirname, 'client/build/')));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Serves index dir as root url
 // app.use('/', indexRouter);
@@ -25,11 +27,15 @@ app.get('/api/hello', (req, res) => {
   });
 });
 
-// any request that doesn't match the above get requests are
-// sent to React's index.html file.
+// // any request that doesn't match the above get requests are
+// // sent to React's index.html file.
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+// });
+
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build/index.html'));
-})
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
