@@ -1,4 +1,11 @@
+branches:
+  only:
+  - master
 language: node_js
+node_js:
+  - "8.11.1"
 install:
   - npm install
   - yarn
+# script:
+  # - commands to run tests and linting
