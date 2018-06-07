@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // render by itself at this route
 app.get('/api/hello', (req, res) => {
   res.send({
-    express: "I'm the Express portion..."
+    express: "Hello from the Express Server"
   });
 });
 
