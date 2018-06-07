@@ -1,4 +1,9 @@
+branches:
+  only:
+  - master
 language: node_js
 install:
   - npm install
   - yarn
+# script:
+  # - commands to run tests and linting
