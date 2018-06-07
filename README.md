@@ -1,9 +1,12 @@
 # Coffee with Craig
 My online portfolio... and a way to connect with me over coffee.
 
-Deployment: AWS Elastic Beanstalk
-Backeng: Node.js Express
+Backend: Node.js Express
 Frontend: React
+Testing: Jest
+Continuous Integration: Travis CI
+Deployment: AWS Elastic Beanstalk
+
 
 ## setup dev environment on your computer
 - (fork) & clone the repository   
