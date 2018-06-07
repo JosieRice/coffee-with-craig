@@ -1,11 +1,11 @@
 # Coffee with Craig
-My online portfolio... and a way to connect with me over coffee.
+My online portfolio... and a way to connect with me over coffee.   
 
-Backend: Node.js Express
-Frontend: React
-Testing: Jest
-Continuous Integration: Travis CI
-Deployment: AWS Elastic Beanstalk
+Backend: Node.js Express   
+Frontend: React   
+Testing: Jest   
+Continuous Integration: Travis CI   
+Deployment: AWS Elastic Beanstalk   
 
 
 ## setup dev environment on your computer
@@ -16,7 +16,7 @@ Deployment: AWS Elastic Beanstalk
 - run dev server & open in browser   
 ```yarn dev```   
 
-## update deployployment on AWS Elastic beanstalk
+## update deployment on AWS Elastic beanstalk
 (this is just a reminder for me)   
 Add and commit changes to branch   
 ```yarn deploy```   
