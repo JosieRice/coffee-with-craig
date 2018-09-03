@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Header from './header/header';
+import Calendar from './calendar/calendar';
 
 class App extends Component {
   state = {
@@ -24,28 +26,11 @@ class App extends Component {
 
   render() {
     // const serverInfo = this.state.response;
-    const calendlyStyle = {
-      minWidth: '320px',
-      height: '580px',
-    };
     
     return (
-
       <div className="App">
-        <header className="App-header">
-        {/* <nav>Coffee Skills Interests Portfolio</nav> */}
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">Welcome to Coffee with Craig</h1>
-          {/* <p className="App-intro">you can reach me at <a href="mailto:craigricetong@gmail.com?subject=Let's get some coffee.">craigricetong@gmail.com</a> while this app is under construction</p> */}
-          {/* <p className="App-intro">{serverInfo}</p> */}
-        </header>
-        
-          
-          {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_6FKnga_YV8zthlZqZPYVh9-V7fpxAivXdg7kZfyOdf3Mdw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> */}
-
-          <a href="https://calendly.com/coffeewithcraig/30min" className="CWC-Link" target="_blank"><h1>Click here to schedule a coffee date.</h1></a>
-
-
+        <Header />
+        {/* <Calendar /> */}
       </div>
     );
   }
