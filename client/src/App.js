@@ -43,7 +43,7 @@ class App extends Component {
           
           {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_6FKnga_YV8zthlZqZPYVh9-V7fpxAivXdg7kZfyOdf3Mdw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> */}
 
-          <a href="https://calendly.com/coffeewithcraig/30min" className="CWC-Link" target="_blank"><h1>Let's meet up for some coffee.</h1></a>
+          <a href="https://calendly.com/coffeewithcraig/30min" className="CWC-Link" target="_blank"><h1>Click here to schedule a coffee date.</h1></a>
 
 
       </div>
