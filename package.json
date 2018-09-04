@@ -12,7 +12,6 @@
     "move": "mv client/build/* public",
     "upload": "eb deploy",
     "deploy": "yarn rmbuild && yarn rmpublic && yarn build && yarn move && yarn upload"
-    
   },
   "dependencies": {
     "express": "^4.16.2"
