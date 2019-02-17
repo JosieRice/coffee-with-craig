@@ -14,7 +14,8 @@
     "deploy": "yarn rmbuild && yarn rmpublic && yarn build && yarn move && yarn upload"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "node": "^10.10.0"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
